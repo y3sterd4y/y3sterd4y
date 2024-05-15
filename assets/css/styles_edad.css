@@ -1,0 +1,150 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    background: #FFEFBA;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #FFEFBA;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #FFEFBA;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+/*resto de la pagina */
+h1 {
+    text-align: center;
+}
+
+.example {
+    display: flex;
+    text-align: center;
+}
+
+.example div {
+    height: 50%;
+}
+
+.formulas {
+    display: flex;
+    justify-content: center;
+}
+
+.formulas div {
+    height: 50%;
+    margin: 0 20px;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.calculator .formu {
+    background-color: floralwhite;
+    padding: 0 40px;
+    border-radius: 4px;
+    border: 1px solid #150836;
+}
+
+.calculator label {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.calculator input {
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px 10px 10px 100px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #b6b6b6;
+}
+
+.calculator select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    display: block;
+    margin: 30px 0;
+    padding: 10px 50px 10px 10px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #222;
+    width: 270px;
+}
+
+.formu button {
+
+    background-color: tomato;
+    padding: 7px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 5);
+    width: 130px;
+    cursor: pointer;
+}
+
+.formu button:hover {
+    background-color: rgb(255, 77, 46);
+}
+
+.calculator .image img {
+    width: 500px;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+
+
+
+/* small screens*/
+@media only screen and (max-width:600px) {
+
+    main {
+        margin: 0;
+    }
+
+    .example {
+        display: block;
+        text-align: center;
+    }
+}
